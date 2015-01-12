@@ -1,18 +1,6 @@
 # encoding: UTF-8
 
-Gem.use_paths(nil, Gem.path << "/opt/codedeploy-agent/vendor")
-
 require 'core_ext'
-
-require 'rubygems'
-# Set up gems listed in the Gemfile.
-ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
-require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
-
-if defined?(Bundler)
-  Bundler.require(:default)
-end
-
 require 'process_manager'
 
 unless defined?(InstanceAgent)
@@ -39,7 +27,6 @@ unless defined?(InstanceAgent)
 end
 
 module InstanceAgent
-
   module Runner
   end
 
