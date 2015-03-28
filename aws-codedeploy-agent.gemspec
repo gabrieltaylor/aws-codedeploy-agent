@@ -26,10 +26,9 @@ Gem::Specification.new do |s|
   s.add_dependency('httpclient')
   s.add_dependency('rake')
 
-  s.add_dependency('gli', '~> 2.5')
+  s.add_runtime_dependency 'gli', '~> 2.5.6', '~> 2.5'
   s.add_dependency('aws-sdk-core', '~> 2.0.5')
   s.add_dependency('builder', '~> 3.2.2')
-  s.add_dependency('gli', '~> 2.5.6')
   s.add_dependency('jamespath', '~> 0.5.1')
   s.add_dependency('little-plugger', '~> 1.1.3')
   s.add_dependency('logging', '~> 1.8.1')
